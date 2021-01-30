@@ -34,13 +34,21 @@ for (let i = 0; i < inputs.length; i++) {
     inputs[i].addEventListener("blur", (e) => {
         switch (e.target.name) {
             case "fullname":
+                if (inputs[i].value) {
+                    break
+                }
                 fullnameLabel.style.top = "50%"
                 break
             case "email":
+                if (inputs[i].value) {
+                    break
+                }
                 emailLabel.style.top = "50%"
                 break
             case "message":
-                console.log('hi');
+                if (inputs[i].value) {
+                    break
+                }
                 messageLabel.style.top = "40px"
                 break
         }
