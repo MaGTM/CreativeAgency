@@ -49,7 +49,7 @@ for (let i = 0; i < inputs.length; i++) {
                 if (inputs[i].value) {
                     break
                 }
-                messageLabel.style.top = "40px"
+                messageLabel.style.top = "35px"
                 break
         }
     })
