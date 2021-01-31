@@ -817,14 +817,39 @@ footer .footer__content #copyright {
     background-size: cover;
     height: 860px;
   }
+  header .header__top {
+    position: relative;
+  }
   header .header__top div ul {
     width: 50px;
   }
   header .header__top div ul #menu__burger {
     display: block;
   }
-  header .header__top div ul li {
-    display: none;
+  header .header__top div ul .transform__menu__wrapper {
+    position: absolute;
+    left: 50%;
+    top: 60px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 100%;
+    overflow: hidden;
+    -webkit-transition: height 0.3s;
+    transition: height 0.3s;
+    height: 0px;
+  }
+  header .header__top div ul .transform__menu__wrapper .transform__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 20px;
+    height: 200px;
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(20%, #7950f6), to(#7950f6));
+    background: linear-gradient(to bottom, transparent 0%, #7950f6 20%, #7950f6 100%);
   }
   header .header__top button {
     display: none;
@@ -949,6 +974,7 @@ footer .footer__content #copyright {
   }
   #contact {
     height: 1200px;
+    overflow-x: visible;
   }
   #contact .contact__content {
     -webkit-box-orient: vertical;

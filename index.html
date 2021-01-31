@@ -14,7 +14,8 @@
             <div>
                 <h1>agency</h1>
                 <ul>
-                    <svg id="menu__burger" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="50" height="50">
+                    <svg id="menu__burger" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="50" height="50"
+                        onclick="openMenu(false)">
                         <g>
                             <path
                                 d="m12 24c-6.617 0-12-5.383-12-12s5.383-12 12-12 12 5.383 12 12-5.383 12-12 12zm0-23c-6.065 0-11 4.935-11 11s4.935 11 11 11 11-4.935 11-11-4.935-11-11-11z" />
@@ -31,13 +32,17 @@
                                 d="m16.5 17h-9c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h9c.276 0 .5.224.5.5s-.224.5-.5.5z" />
                         </g>
                     </svg>
-                    <li onclick="scrollFun('header')">Home</li>
-                    <li onclick="scrollFun('#about')">About us</li>
-                    <li onclick="scrollFun('#services')">Our Services</li>
-                    <li onclick="scrollFun('#testimonials')">Support</li>
+                    <div class="transform__menu__wrapper">
+                        <div class="transform__menu">
+                            <li onclick="scrollFun('header'); openMenu(true)">Home</li>
+                            <li onclick="scrollFun('#about'); openMenu(true)">About us</li>
+                            <li onclick="scrollFun('#services'); openMenu(true)">Our Services</li>
+                            <li onclick="scrollFun('#testimonials'); openMenu(true)">Support</li>
+                        </div>
+                    </div>
                 </ul>
             </div>
-            <button onclick="scrollFun('#contact')">Contact</button>
+            <button onclick="scrollFun('#contact'); openMenu(true)">Contact</button>
         </div>
         <div class="header__content content">
             <div class="text">
@@ -401,10 +406,10 @@
         <div class="footer__content content">
             <h1 class="logo">agency</h1>
             <ul>
-                <li onclick="scrollFun('header')">Home</li>
-                <li onclick="scrollFun('#about')">About us</li>
-                <li onclick="scrollFun('#services')">Our Services</li>
-                <li onclick="scrollFun('#testimonials')">Support</li>
+                <li onclick="scrollFun('header'); openMenu(true)">Home</li>
+                <li onclick="scrollFun('#about'); openMenu(true)">About us</li>
+                <li onclick="scrollFun('#services'); openMenu(true)">Our Services</li>
+                <li onclick="scrollFun('#testimonials'); openMenu(true)">Support</li>
             </ul>
             <div class="icons">
                 <a href="#">

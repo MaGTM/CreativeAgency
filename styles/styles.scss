@@ -590,14 +590,29 @@ footer {
         background-size: cover;
         height: 860px;
         .header__top {
+            position: relative;
             div {
                 ul {
                     width: 50px;
                     #menu__burger {
                         display: block;
                     }
-                    li {
-                        display: none;
+                    .transform__menu__wrapper {
+                        position: absolute;
+                        left: 50%;
+                        top: 60px;
+                        transform: translateX(-50%);
+                        width: 100%;
+                        overflow: hidden;
+                        transition: height 0.3s;
+                        height: 0px;
+                        .transform__menu {
+                            display: flex;
+                            flex-direction: column;
+                            padding-bottom: 20px;
+                            height: 200px;
+                            background: linear-gradient(to bottom, transparent 0%, #7950f6 20%, #7950f6 100%);
+                        }
                     }
                 }
             }
@@ -738,6 +753,7 @@ footer {
 
     #contact {
         height: 1200px;
+        overflow-x: visible;
         .contact__content {
             flex-direction: column;
             .text {
@@ -1100,7 +1116,7 @@ footer {
                     &:last-child {
                         margin-bottom: 100px;
                     }
-    
+
                     &:hover {
                         transform: translateY(-20px);
                     }

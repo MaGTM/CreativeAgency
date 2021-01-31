@@ -91,3 +91,17 @@ let prevSlide = () => {
         }
     }
 }
+
+// Burger Menu animations
+let openMenu = (type) => {
+    switch(type) {
+        case false:
+            document.querySelector('.transform__menu__wrapper').style.height = "200px"
+            document.querySelector('#menu__burger').setAttribute("onclick", "openMenu(true)")
+            break
+        case true:
+            document.querySelector('.transform__menu__wrapper').style.height = "0px"
+            document.querySelector('#menu__burger').setAttribute("onclick", "openMenu(false)")
+            breakk
+    }
+}
