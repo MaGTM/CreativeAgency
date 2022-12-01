@@ -3,7 +3,7 @@
 Creative Agency Adaptive Landing Page project for portfolio.
 
 Deployed on Netlify
-[https://goofy-goldberg-6bf43d.netlify.app/](https://goofy-goldberg-6bf43d.netlify.app/)
+[*Нажми меня*](https://maximdesignagency.netlify.app)
 
 Total Hours: `14h`                                                                            
 Page Speed: `100`
