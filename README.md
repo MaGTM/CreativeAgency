@@ -2,7 +2,7 @@
 
 Creative Agency Adaptive Landing Page project for portfolio.
 
-Deployed on Netlify
+Deployed on Netlify ->
 [Нажми меня](https://maximdesignagency.netlify.app)
 
 Total Hours: `14h`                                                                            
